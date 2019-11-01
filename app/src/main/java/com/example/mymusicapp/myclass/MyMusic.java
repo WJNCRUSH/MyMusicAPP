@@ -1,9 +1,6 @@
 package com.example.mymusicapp.myclass;
-
 import android.graphics.drawable.BitmapDrawable;
-
 import org.litepal.crud.DataSupport;
-
 public class MyMusic extends DataSupport {
     private String musicId;
     private String musicName;
@@ -13,31 +10,9 @@ public class MyMusic extends DataSupport {
     private int time;
     private String album;
     private boolean isCheck = false;
-    private BitmapDrawable albumPic;
-
-    public MyMusic() {
-    }
-
-    public boolean isCheck() {
-        return isCheck;
-    }
-
-    public void setCheck(boolean check) {
-        isCheck = check;
-    }
-
-    public BitmapDrawable getAlbumPic() {
-        return albumPic;
-    }
-
-    public void setAlbumPic(BitmapDrawable albumPic) {
-        this.albumPic = albumPic;
-    }
-
     public boolean getIsCheck() {
         return isCheck;
     }
-
     public void setIsCheck(boolean isCheck) {
         this.isCheck = isCheck;
     }
@@ -86,9 +61,6 @@ public class MyMusic extends DataSupport {
         return singer;
     }
 
-    public void setSinger(String singer) {
-        singer = singer;
-    }
 
     public String getPath() {
         return path;
@@ -107,6 +79,5 @@ public class MyMusic extends DataSupport {
         this.time = time;
         this.album = album;
         this.isCheck = isCheck;
-        this.albumPic = albumPic;
     }
 }
