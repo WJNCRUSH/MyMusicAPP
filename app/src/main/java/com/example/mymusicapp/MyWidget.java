@@ -1,4 +1,4 @@
-package com.example.mymusicapp;
+/*package com.example.mymusicapp;
 
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -26,3 +26,4 @@ public class MyWidget extends AppWidgetProvider {
         super.onReceive(context, intent);
     }
 }
+*/
