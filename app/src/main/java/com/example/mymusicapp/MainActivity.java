@@ -189,18 +189,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void updateProgress() {
         handler.sendMessageDelayed(Message.obtain(), 1000);
     }
-
-
-    private void playMusic(String url, int position) {
-        Intent playIntent = new Intent(this, MusicService.class);
-        playIntent.putExtra("url", url);
-        playIntent.putExtra("position", position);
-        playIntent.putExtra("msg", PLAY_MUSIC);
-        startService(playIntent);
-        isPlaying = true;
-    }
-
-
     //音乐播放
 
     private void playMusic(MyMusic myMusic) {
